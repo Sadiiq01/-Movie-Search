@@ -13,7 +13,7 @@ const App = () => {
     setLoading(true);
     axios
       .get(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=2cead3e&s=${searchQuery}`
+        `https://www.omdbapi.com/?i=tt3896198&apikey=2cead3e&s=${searchQuery}`
       )
       .then((res) => {
         setMovies(res.data.Search || res.data);
